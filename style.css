@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+cor da fonte #201F1F
+cor no pix #199A64
+*/
+
+body {
+    background: #fff;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+header#pix {
+    background-color: #000;
+    padding: 6px;
+}
+
+div.info-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+header#pix a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: 15px;
+    border-bottom: 1px solid rgba(144, 144, 144, 0.13);
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+header#header ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+header#header ul li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+}
+
+header#header ul li span {
+    width: 130px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+header#header ul li span.count {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+div.busca, .newsletter-cadastro {
+    width: 402px;
+    background-color: #F6F6F6;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+}
+
+form.form-buscar, input {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form.form-buscar input {
+    font-size: 13px;
+    line-height: 16px;
+    background: transparent;
+    border: none;
+}
+
+.input:active, .input:focus {
+    outline: none;
+}
+
+form.form-buscar button {
+    background: none;
+    border: none;
+}
+
+nav.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+    
+    gap: 12px;
+}
+
+.nav-list {
+    padding: 15px;
+    transition: 0.2s;
+}
+
+.nav-list a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+a:hover{
+    filter: opacity(80%);
+}
+
+li.promocoes {
+    background: #C00;
+}
+
+li.promocoes a {
+    color: #fff;
+}
+
+div.banner{
+    background-color: #000;
+    width: 100%;
+    height: auto;
+}
+
+div.banner a img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+div.banner a img:hover {
+    filter: blur(2px);
+}
+
+.banner-vantagens {
+    padding: 7px;
+}
+
+.slick-track {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+}
+
+.vantagem a {
+    display: flex;
+    gap: 13px;
+    font-size: 17px;
+    line-height: 17px;
+
+    text-decoration: none;
+    color: #000;
+}
+
+.text {
+    text-align: left;
+}
+
+.produtos {
+    margin: auto;
+    width: 1260px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 20px;
+}
+
+ul.produtos-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.listagem-item img {
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.listagem-item:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.listagem-item:hover > img {
+    transform: scale(0.97);
+}
+
+
+.info-produto {
+    padding: 15px 20px;
+}
+
+.info-produto a {
+    text-decoration: none;
+    color: #201F1F;
+    font-size: 16px;
+    line-height: 17px;
+    margin-top: 13px;
+}
+
+.preco-produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.preco-normal {
+    margin: 16px 0 8px 0;
+    font-weight: bold;
+    padding: 0 75px;
+}
+
+.preco-produto div {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.desconto-a-vista {
+    color: #199A64;
+}
+
+.pp-pix {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    margin-top: 14px;
+    padding: 8px 50px;
+    border-radius: 4px;
+    background: #F2F2F2;
+}
+
+.slick-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 20px 20px 30px;
+    padding: 10px 75px;
+}
+
+.list-title {
+    margin-top: 60px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#barraNewsletter {
+    margin-top: 20px;
+    padding: 0 350px;
+}
+
+.interno {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.texto-newsletter {
+    margin-bottom: 12px;
+}
+
+.institucional {
+    padding: 25px 350px;
+}
+
+/*rodape*/
+
+.institucional {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.rodape-sobre {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 320px;
+
+    text-align: justify;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.a-block {
+    padding: 6px;
+    border-bottom: 1px solid #201f1f65;
+}
+
+.a-block a, .email{
+    text-decoration: none;
+    color: #000;
+}
+
+.contato-titulo {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+.a-block a {
+    margin: 6px 0;
+}
+
+.rodape-institucional h2 {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.rodape-institucional li{
+    list-style: none;
+    margin-bottom: 6px;    
+}
+
+.rodape-social {
+    width: 300px;
+}
+
+.rodape-social h2 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
